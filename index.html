@@ -1,0 +1,38 @@
+<html ng-app="TicTacToe">
+<head>
+    <title>Our Kampf</title>
+   
+    <!-- AngularJS CDN -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/TicTacToeController.js"></script>
+<!--     // <script type="text/javascript" src="js/GameBoardFactory.js"></script>
+    // <script type="text/javascript" src="js/GamePlayerFactory.js"></script> -->
+
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+</head>
+    <body ng-controller = "TicTacToeController as ticCtr">  
+
+        <main>
+
+        <input type="button" class="button" value="New Game">
+
+            <div id="fullBoard">
+
+                <div class="squares" 
+                ng-repeat="box in ticCtr.GameBoard track by $index"
+                ng-click="ticCtr.click($index)">
+                {{box}}
+                    
+                </div>
+                }
+                }
+              
+            </div>
+
+        </main>
+    </body>
+</html>
