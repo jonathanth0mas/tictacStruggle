@@ -1,11 +1,12 @@
 <html ng-app="TicTacToe">
 <head>
-    <title>Our Kampf</title>
+    <!--<title>Tic Tac TrippyToe</title>-->
    
     <!-- AngularJS CDN -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/TicTacToeController.js"></script>
+
 <!--     // <script type="text/javascript" src="js/GameBoardFactory.js"></script>
     // <script type="text/javascript" src="js/GamePlayerFactory.js"></script> -->
 
@@ -14,11 +15,16 @@
 
 
 </head>
+    <div id="page">
+        <h1 id="header">TIC TAC KANYE</h1>
+    </div>
+
+
     <body ng-controller = "TicTacToeController as ticCtr">  
 
         <main>
 
-        <input type="button" class="button" value="New Game">
+        <input type="button" class="button" value="New Game" ng-click="ticCtr.clearBoard()">
 
             <div id="fullBoard">
 
@@ -28,11 +34,11 @@
                 {{box}}
                     
                 </div>
-                }
-                }
+
               
             </div>
 
         </main>
+        <script type="text/javascript" src="js/TicTacToeController.js"></script>
     </body>
 </html>

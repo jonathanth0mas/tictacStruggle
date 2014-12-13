@@ -1,4 +1,29 @@
-//factory aslways returns a constructor function
-//
-//factory should only have one purpose
+(function(){
 
+angular
+    .module("TicTacToe")
+    .factory("GameBoardFire", GameBoardFire);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})();

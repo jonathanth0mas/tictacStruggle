@@ -4,44 +4,45 @@ body {
   font-size: 16px;
   font-family: 'Cardo', serif;
   /*background: url("../img/wtt.gif");*/
-
-
 }
+
+/*#page {*/
+  /*background: url('../designs/headerPiece.png') top left repeat-x;*/
+/*}*/
+
+/*#page h1 {*/
+  /*background: url('designs/header12.png') top left no-repeat;*/
+  /*margin: 0px auto;*/
+  /*width: width-of-the-header;*/
+  /*height: 33px;*/
+/*}*/
+
 
 #fullBoard {
   margin-left:auto; 
   margin-right:auto; 
-  width: 330px;
+  width: 320px;
+  height: 315px;
   -webkit-user-select: none;
   background: url("../img/dualFace.gif");
   background-position: left;
 
 }
 .squares {
-  background: url("../img/solar.png");
   height: 100px;
   width: 100px;
   display: inline-block;
   font-size: 120px;
   border: 2px solid #cccccc;
   -webkit-border-radius: 18px;
-
-
-
 }
+
+
 
 .button {
   float: left;
-  margin-top: ;
 }
 
 
-.x-taken {
-  z-index: 50;
-  width: 100px;
-  height: 100px;
-  background-size: 100px;
-  background-repeat: no-repeat;
 
-}
 
